@@ -73,7 +73,7 @@ public class Timer extends JFrame {
     // 为窗体面板添加边框  
     private void setupBorder() {
         JPanel contentPane = new JPanel(new BorderLayout());
-        contentPane.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        contentPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         this.setContentPane(contentPane);
     }
 
