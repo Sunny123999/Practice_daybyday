@@ -5,11 +5,10 @@ package com.lihuan.Practice.day6;
  *添加功能:实现了当前棋局的保存
  */
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
-import java.util.*;
-import java.io.*;
+import java.util.Vector;
 
 //主类
 public class Chess{
