@@ -12,8 +12,8 @@ import java.util.Scanner;
  */
 public class CalculateLiveDays {
     public static void main(String[] args) throws ParseException {
-        System.out.println("***********计算出生到现在多少天**********");
-        System.out.println("请输入你的生日，日期格式yyyy-MM-dd");
+        System.out.println("**********************计算出生到现在多少天*********************");
+        System.out.println("请输入你的生日，日期格式yyyy-MM-dd，例如：1999-01-01");
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
 
@@ -30,7 +30,7 @@ public class CalculateLiveDays {
         if (days < 0) {
             System.out.println("你还没出生呢！！");
         } else {
-            System.out.println("距离你出生已经过去了"+days+"天！");
+            System.out.println("距离你出生已经过去了" + days + "天！");
         }
     }
 }

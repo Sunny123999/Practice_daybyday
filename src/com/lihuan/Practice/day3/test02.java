@@ -8,15 +8,15 @@ package com.lihuan.Practice.day3;
 public class test02 {
     public static void main(String[] args) {
         int count = 0;
-        for(int i = 1;i < 200;i+=2) {
-            boolean flag=true;
-            for(int j=2;j<=Math.sqrt(i);j++) {
-                if(i%j==0) {
-                    flag=false;
+        for (int i = 1; i < 200; i += 2) {
+            boolean flag = true;
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    flag = false;
                     break;
                 }
             }
-            if(flag) {
+            if (flag) {
                 count++;
                 System.out.println(i);
             }

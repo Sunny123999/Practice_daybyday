@@ -17,7 +17,7 @@ public class TestAutoBox {
 
         Integer e1 = -128;
         Integer e2 = -128;
-        System.out.println(e1==e2);
+        System.out.println(e1 == e2);
         System.out.println(e1.equals(e2));
 
     }

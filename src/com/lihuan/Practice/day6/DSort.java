@@ -17,7 +17,7 @@ public class DSort {
         String str = scanner.next().toString();
         String[] arr = str.split(",");
         int[] arrays = Arrays.asList(arr).stream().mapToInt(Integer::parseInt).toArray();
-        System.out.println("排序前："+Arrays.toString(arrays));
+        System.out.println("排序前：" + Arrays.toString(arrays));
         for (int i = 0; i < arrays.length; i++) {
             for (int j = i; j < arrays.length; j++) {
                 if (arrays[i] > arrays[j]) {//前一个数字与后一个数字比较小的在前大的在后

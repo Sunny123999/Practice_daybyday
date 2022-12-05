@@ -11,24 +11,24 @@ public class ThreadDemo {
 //        TestThread testThread = new TestThread();
 //        testThread.run();
         new TestThread().start();
-        for (int i =0;i<5;i++){
-            System.out.println("main线程在运行！！"+i);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("main线程在运行！！" + i);
             try {
                 Thread.sleep(1000);
-            }catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
     }
 }
 
-class TestThread extends Thread{
-    public void run(){
-        for (int i =0;i<5;i++){
-            System.out.println("ThestThread在运行！"+i);
+class TestThread extends Thread {
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("ThestThread在运行！" + i);
             try {
                 Thread.sleep(1000);
-            }catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }

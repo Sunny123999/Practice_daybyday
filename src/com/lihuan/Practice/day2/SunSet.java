@@ -13,26 +13,26 @@ public class SunSet {
 
     private static final Object PRESENT = new Object();
 
-    public SunSet(){
+    public SunSet() {
         map = new HashMap();
     }
 
-    public int size(){
+    public int size() {
         return map.size();
     }
 
-    public void add(Object o){
-        map.put(o,PRESENT);
+    public void add(Object o) {
+        map.put(o, PRESENT);
     }
 
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("[");
-        for (Object key:map.keySet()){
-            stringBuilder.append(key+",");
+        for (Object key : map.keySet()) {
+            stringBuilder.append(key + ",");
         }
-        stringBuilder.setCharAt(stringBuilder.length()-1,']');
+        stringBuilder.setCharAt(stringBuilder.length() - 1, ']');
         return stringBuilder.toString();
     }
 
